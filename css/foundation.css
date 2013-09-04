@@ -3889,7 +3889,7 @@ form.custom {
     background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
     background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
     -webkit-box-shadow: none;
-    background: linear-gradient(to bottom, white 0%, #f3f3f3 100%);
+    background: linear, to bottom, white 0%, #f3f3f3 100%;
     box-shadow: none;
     font-size: 0.875em;
     vertical-align: top; }
@@ -4396,14 +4396,14 @@ ul.pagination {
       background: white;
       background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
       background: -webkit-linear-gradient(top, white 0%, #f2f2f2 100%);
-      background: linear-gradient(to bottom, white 0%, #f2f2f2 100%);
+      background: linear, to bottom, white 0%, #f2f2f2 100%;
       -webkit-box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 1000px white, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke;
       box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px white, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke; }
     div.switch:hover span:last-child, div.switch:focus span:last-child {
       background: white;
       background: -moz-linear-gradient(top, white 0%, #e6e6e6 100%);
       background: -webkit-linear-gradient(top, white 0%, #e6e6e6 100%);
-      background: linear-gradient(to bottom, white 0%, #e6e6e6 100%); }
+      background: linear, to bottom, white 0%, #e6e6e6 100%; }
     div.switch:active {
       background: transparent; }
     div.switch.large {
