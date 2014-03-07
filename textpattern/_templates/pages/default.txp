@@ -50,16 +50,16 @@
 <body class="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page">
 
   <div class="l-container">
-
     <!-- header and navigation -->
-    <div role="banner" class="l-header">
+    <header role="banner" class="l-header">
     	<div class="l-header__brand">
-        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+        <h1><txp:link_to_home><img src="http://dummyimage.com/100x100/2ABB9B/686a82.gif&text=gafas" alt="gafas" style="border-radius: 50px;"></txp:link_to_home></h1>
       </div>
       <div class="l-header__nav">
         <txp:output_form form="tf_primary_navigation" />
+        <txp:output_form form="tf_search_form" />
       </div>
-    </div>
+    </header>
 
     <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
@@ -131,7 +131,13 @@
 
     </main>
 
+    <footer role="contentinfo" class="l-footer">
+      <div class="l-footer__credits">
+        <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.
+      </div>
+    </footer>
 
+  </div> <!-- /.l-container -->
   <!-- add your own JavaScript here -->
   <txp:output_form form="tf_javascript" />
 

@@ -4,30 +4,45 @@
 // GRID CONTAINER
 .l-container {
   @include outer-container;
-  max-width: em(940,16)
 }
 
 // HEADER
 .l-header {
   @include media($medium-screen)  {
-    @include span-columns(2);
+    position: fixed;
+    width: em(160,16);
   }
-  color: #fff;
+  text-align: center;
 }
 
 .l-header__brand {
-
+  @include media($medium-screen)  {
+    margin-top: em(80,16);
+  }
+  margin-top: em(40,16);
 }
 
 .l-header__nav {
-  text-align: center;
+  
 }
 
 // MAIN COLUMN CONTENT
 .l-content {
   @include media($medium-screen)  {
     @include span-columns(10);
-    @include omega();
+    @include omega;
+    float: right;
   }
   background-color: #fff;
+}
+
+.l-footer {
+  @include media($medium-screen)  {
+    position: fixed;
+    bottom: 0;
+    width: em(160,16);
+  }
+  color: #fff;
+  padding-bottom: 1em;
+  text-align: center;
 }
