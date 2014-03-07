@@ -7,7 +7,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  background-color: #2D3E4F;
+  background-color: $dark-blue;
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
@@ -50,7 +50,7 @@ h6, .h6 {
 
 // BODY TEXT
 p {
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 1.5em;
 }
 
 a {
@@ -83,6 +83,7 @@ hr {
 img {
   margin: 0;
   max-width: 100%;
+  height: auto;
 }
 
 // INLINE TEXT SEMANTICS

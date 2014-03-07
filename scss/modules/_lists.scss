@@ -42,11 +42,17 @@ dl {
   a {
     color: #fff;
   }
+  a:hover, a:focus {
+    color: $green;
+  }
   > li {
     border-bottom: 1px solid #fff;
     padding: 0.4em 0;
   }
   > li:last-child {
     border-bottom: none
+  }
+  .active {
+    font-weight: 800;
   }
 }
