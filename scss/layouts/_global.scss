@@ -9,7 +9,7 @@
 
 // HEADER
 .l-header {
-  @include media($small-screen)  {
+  @include media($medium-screen)  {
     @include span-columns(2);
   }
   color: #fff;
@@ -25,7 +25,7 @@
 
 // MAIN COLUMN CONTENT
 .l-content {
-  @include media($small-screen)  {
+  @include media($medium-screen)  {
     @include span-columns(10);
     @include omega();
   }

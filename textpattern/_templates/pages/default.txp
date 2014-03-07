@@ -42,10 +42,8 @@
 
 <!-- css -->
 
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800'>
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
-
-  <script type="text/javascript" src="//use.typekit.net/ocy1umi.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
 
