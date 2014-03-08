@@ -5,11 +5,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
 
 <head>
-  <title><txp:error_status /></title>
+  <title><txp:page_title /></title>
   <meta charset="utf-8">
   <meta name="generator" content="Textpattern CMS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="none">
 
 <!-- content feeds -->
   <txp:feed_link flavor="atom" format="link" label="Atom" />
@@ -43,10 +42,8 @@
 <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
       <article class="post">
-        <h1><txp:error_status /></h1>
-        <img src="http://www.quickmeme.com/img/32/32f5280e86bc37a418071d5c5d2c98df5b74ee955a8cdbba2a2713204b2a6e26.jpg" alt="cat 404">
-        <p class="alert--error"><txp:error_message /></p>
-        <p>You can try to find it using the search box or checking the <a href="/blog">blog archive</a>. Thanks.</p>
+        <h1>About me</h1>
+        <p>Mauris quis posuere dolor. Donec quis magna a felis viverra porta. Nam semper, velit in imperdiet luctus, arcu elit adipiscing sem, sit amet dapibus tortor purus vitae dolor. Vivamus lectus justo, laoreet sit amet auctor non, commodo nec mi. In vel rutrum arcu. Maecenas a neque justo. Sed porta mattis libero a imperdiet. Fusce scelerisque, nulla nec scelerisque consequat, ligula sem molestie magna, et sagittis tellus metus id lorem. Donec nulla augue, posuere a lacus a, porttitor facilisis leo. Donec lacus nisi, volutpat sed sem id, sagittis tempus nisi. Morbi dolor justo, accumsan sed dolor vel, feugiat mollis odio. Maecenas faucibus iaculis nisi quis lobortis. Vestibulum a mollis turpis.</p>
       </article> 
     </main>
 

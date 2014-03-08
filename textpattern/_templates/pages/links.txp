@@ -5,11 +5,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
 
 <head>
-  <title><txp:error_status /></title>
+  <title><txp:page_title /></title>
   <meta charset="utf-8">
   <meta name="generator" content="Textpattern CMS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="none">
 
 <!-- content feeds -->
   <txp:feed_link flavor="atom" format="link" label="Atom" />
@@ -42,12 +41,21 @@
 
 <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
-      <article class="post">
-        <h1><txp:error_status /></h1>
-        <img src="http://www.quickmeme.com/img/32/32f5280e86bc37a418071d5c5d2c98df5b74ee955a8cdbba2a2713204b2a6e26.jpg" alt="cat 404">
-        <p class="alert--error"><txp:error_message /></p>
-        <p>You can try to find it using the search box or checking the <a href="/blog">blog archive</a>. Thanks.</p>
-      </article> 
+      <txp:if_search>
+      
+        <h2 class="page-header"><txp:text item="search_results" />: <txp:page_url type="q" /></h2>
+        <p>Links containing &laquo;<txp:page_url type="q" />&raquo;</p>
+        <txp:rah_link_search break="li" wraptag="ul" />
+        <br>
+
+        <txp:else />
+        <h1>Links <small>(Page <txp:rsx_page_number /> of <txp:rsx_last_page_num />)</small></h1>
+        <txp:linklist break="li" form="Links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="unstyled link-list" breakclass="link-item" />
+
+       <div class="pagination pagination-centered"><txp:rsx_page_number_list nav='1' leftward='&lt;&lt; Prev' rightward='Next &gt;&gt;' delim='' windowsize='5' />
+        </div><!-- .pagination -->
+
+      </txp:if_search>
     </main>
 
     <!-- footer -->

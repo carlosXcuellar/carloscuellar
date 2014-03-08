@@ -54,78 +54,46 @@
     </header>
 
     <!-- main content -->
-    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+    <!-- left (main) column -->
+      <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+          <h1 itemprop="name">Archive</h1>
+            <div itemprop="mainContentOfPage">
+            <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
 
-      
+              <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
+              <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
 
-      <txp:if_article_list>
+              <txp:if_variable name="year" value=""><txp:else />
+                <txp:if_first_article><txp:else />
+                      </ul>
+                    </li>
+                  </ul>
+                </txp:if_first_article>
+                <li><strong><txp:posted format="%Y" /></strong>
+                  <ul>
+              </txp:variable>
 
-        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-          <h1 itemprop="name"><txp:section title="1" /></h1>
+              <txp:if_variable name="month" value=""><txp:else />
+                <txp:if_variable name="year" value="">
+                    </ul>
+                  </li>
+                <txp:else /></txp:if_variable>
+                <li><strong><txp:posted format="%B" /></strong>
+                  <ul>
+              </txp:variable>
 
-          <div itemprop="mainContentOfPage">
-            <txp:if_article_list>
-              <txp:article form="article_listing" limit="10" wraptag="ul" class="article-list" />
-              <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
-              <txp:else />
-              <txp:article />
-            </txp:if_article_list>
-          </div>
-        </section>
+              <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
 
-        <txp:else />
+              <txp:if_last_article></ul></li></ul></txp:if_last_article>
 
-        <txp:article />
-
-      </txp:if_article_list>
-
-      <!-- add pagination links to foot of article/article listings if there are more articles available,
-      this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-      <txp:if_individual_article>
-
-        <txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />
-        <txp:variable name="prev" value='<txp:link_to_prev />' />
-        <txp:variable name="next" value='<txp:link_to_next />' />
-
-        <txp:if_variable name="more" value="">
-          <txp:else />
-          <p class="paginator">
-            <txp:if_variable name="prev" value="">
-              <txp:else />
-              <a rel="prev" href="<txp:link_to_prev />" title="<txp:prev_title />">← <txp:text item="older" /></a>
-            </txp:if_variable>
-
-            <txp:if_variable name="next" value="">
-              <txp:else />
-              <a rel="next" href="<txp:link_to_next />" title="<txp:next_title />"><txp:text item="newer" /> →</a>
-            </txp:if_variable>
-          </p>
-        </txp:if_variable>
-
-        <txp:else />
-
-        <txp:variable name="more" value='<txp:older /><txp:newer />' />
-        <txp:variable name="prev" value='<txp:older />' />
-        <txp:variable name="next" value='<txp:newer />' />
-
-        <txp:if_variable name="more" value="">
-          <txp:else />
-          <p class="paginator">
-            <txp:if_variable name="prev" value="">
-              <txp:else />
-              <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">← <txp:text item="older" /></a>
-            </txp:if_variable>
-
-            <txp:if_variable name="next" value="">
-              <txp:else />
-              <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> →</a>
-            </txp:if_variable>
-          </p>
-        </txp:if_variable>
-
-      </txp:if_individual_article>
-
-    </main>
+            </txp:article_custom>
+        </div>
+        <hr />
+        <h2>Tag Cloud</h2>
+        <txp:tru_tags_cloud section="blog" />
+          </section>
+        </main>
 
     <!-- footer -->
     <footer role="contentinfo" class="l-footer">

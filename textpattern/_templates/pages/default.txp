@@ -50,6 +50,7 @@
 <body class="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page">
 
   <div class="l-container">
+
     <!-- header and navigation -->
     <header role="banner" class="l-header">
       <div class="nav__toggle">
@@ -79,35 +80,22 @@
 
         <txp:else />
 
-        <!-- else is this an article category list? -->
-        <txp:if_category>
+        <!-- else is this a tag page -->
+        <txp:if_section name="tag">
 
           <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-            <h1 itemprop="name"><txp:text item="category" /> <txp:category title="1" /></h1>
+            <h1>Tag: &ldquo;<txp:tru_tags_tag_parameter />&rdquo;</h1>
             <div itemprop="mainContentOfPage">
-              <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
+              <txp:tru_tags_handler listform="article_listing" wraptag="ul" class="article-list" />
             </div>
           </section>
 
           <txp:else />
 
-          <!-- else is this an article author list? -->
-          <txp:if_author>
-
-            <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-              <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
-              <div itemprop="mainContentOfPage">
-                <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
-              </div>
-            </section>
-
-            <txp:else />
-
             <!-- else display articles normally -->
             <txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
 
-          </txp:if_author>
-        </txp:if_category>
+        </txp:if_section>
 
         <!-- add pagination links to foot of article/article listings/category listings if there are more articles available,
         this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
@@ -133,7 +121,7 @@
       </txp:if_search>
 
     </main>
-
+    <!-- footer -->
     <footer role="contentinfo" class="l-footer">
       <div class="l-footer__credits">
         <ul class="list--inline">

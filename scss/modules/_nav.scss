@@ -81,24 +81,25 @@ input[type="color"] {
   @include media($medium-screen)  {
     display: none;
   }
-  display: block;
-  font-size: 30px;
-  color: #fff;
   position: absolute;
   top: em(30);
   right: 1em;
+  display: block;
+  color: #fff;
+  font-size: 30px;
 }
 
 // PAGINATOR 
 .paginator {
+  @include clearfix;
+  margin-bottom: 0;
   padding: 1em 10%;
   background-color: $lighter-gray;
-  @include clearfix;
   > a {
+    float: left;
     padding: 0.3em 0.6em;
     border: 1px solid $green;
     border-radius: 20px;
-    float: left;
   }
   > a:nth-of-type(2) {
     float: right;
