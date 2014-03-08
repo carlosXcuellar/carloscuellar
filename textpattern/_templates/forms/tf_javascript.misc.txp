@@ -12,6 +12,7 @@
   });
 </script>
 
+<!-- toggle menu -->
 <script>
   $(function() {
     $( ".nav__toggle" ).click(function() {

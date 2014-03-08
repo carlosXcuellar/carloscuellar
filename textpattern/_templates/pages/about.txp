@@ -25,19 +25,7 @@
 <body class="error-page">
   <div class="l-container">
 
-    <!-- header and navigation -->
-    <header role="banner" class="l-header">
-      <div class="nav__toggle">
-        <i class="icon-menu"></i>
-      </div>
-      <div class="l-header__brand">
-        <h1><txp:link_to_home><i class="icon-gafas"></i></txp:link_to_home></h1>
-      </div>     
-      <div class="l-header__nav">
-        <txp:output_form form="tf_primary_navigation" />
-        <txp:output_form form="tf_search_form" />
-      </div>
-    </header>
+    <txp:output_form form="header" />
 
 <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
@@ -53,22 +41,10 @@
       </article> 
     </main>
 
-    <!-- footer -->
-    <footer role="contentinfo" class="l-footer">
-      <div class="l-footer__credits">
-        <ul class="list--inline">
-          <li><a href="/rss" title="RSS Feed"><i class="icon-feed"></i></a></li>
-          <li><a href="https://twitter.com/cuellarllar" title="Twitter"><i class="icon-twitter"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/cuellarllar" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-          <li><a href="https://github.com/cuellarllar" title="Github"><i class="icon-github"></i></a></li>
-        </ul>
-        <p>&copy; Carlos Cu&eacute;llar 2014</p>
-      </div>
-    </footer>
+    <txp:output_form form="footer" />
 
   </div> <!-- /.l-container -->
 
-  <!-- add your own JavaScript here -->
   <txp:output_form form="tf_javascript" />
 
 </body>
