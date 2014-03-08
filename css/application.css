@@ -541,14 +541,14 @@ blockquote {
       width: 10em; } }
 
 .l-header__brand {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   margin: 0 auto 1.25em auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #2abb9b;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -moz-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out; }
+  background-color: #2abb9b; }
   .l-header__brand:hover {
     background-color: #fff; }
   .l-header__brand > h1 a {
@@ -582,16 +582,17 @@ blockquote {
     .l-footer {
       position: fixed;
       bottom: 0;
+      padding-right: 1em;
       width: 10em; } }
 
 .l-footer__credits {
   font-size: 12px;
   font-size: 1.2rem; }
   .l-footer__credits a {
-    color: #fff;
     -webkit-transition: color 0.5s ease-in-out;
     -moz-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out; }
+    transition: color 0.5s ease-in-out;
+    color: #fff; }
     .l-footer__credits a:hover {
       color: #2abb9b; }
 
@@ -741,8 +742,8 @@ input[type="color"] {
   content: "\e608"; }
 
 footer [class^="icon-"] {
-  font-size: 24px;
-  font-size: 2.4rem; }
+  font-size: 20px;
+  font-size: 2rem; }
 
 ul, ol {
   margin: 0;
