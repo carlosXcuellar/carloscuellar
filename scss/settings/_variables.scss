@@ -5,7 +5,7 @@ $light-blue: #A4DBE8;
 $medium-blue: #00AFD7;
 $dark-blue: #2D3E4F;
 
-$lighter-gray: #F0F0F0;
+$lighter-gray: #F3F3F3;
 $light-gray: #DDD;
 $medium-gray: #B2B4B2;
 $dark-gray: #54585A;
@@ -36,7 +36,7 @@ $success-color: $green;
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: "Open Sans", helvetica, arial, sans-serif;
+$sans-serif: "Open Sans", $helvetica;
 $serif: $georgia;
 
 $base-font-family: $sans-serif;

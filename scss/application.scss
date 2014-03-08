@@ -27,11 +27,9 @@
 @import "layouts/global";
 
 // Modules
-@import "modules/alerts",
+@import
   "modules/article",
-  "modules/buttons",
-  "modules/forms",
-  "modules/labels",
+  "modules/nav",
   "modules/lists",
   "modules/tables";
 

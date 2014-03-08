@@ -1,3 +1,4 @@
+// BASIC LIST STYLES
 ul, ol {
   margin: 0;
   margin-bottom: $base-line-height / 2;
@@ -31,28 +32,5 @@ dl {
     @include inline-block;
     padding-right: 5px;
     padding-left: 5px;
-  }
-}
-
-// NAV LIST
-
-.nav__list {
-  list-style-type: none;
-  padding: em(20,16) 0;
-  a {
-    color: #fff;
-  }
-  a:hover, a:focus {
-    color: $green;
-  }
-  > li {
-    border-bottom: 1px solid #fff;
-    padding: 0.4em 0;
-  }
-  > li:last-child {
-    border-bottom: none
-  }
-  .active {
-    font-weight: 800;
   }
 }
