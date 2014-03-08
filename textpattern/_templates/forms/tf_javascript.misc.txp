@@ -11,3 +11,12 @@
     $(".post").fitVids();
   });
 </script>
+
+<script>
+  $(function() {
+    $( ".nav__toggle" ).click(function() {
+      $( ".l-header__nav" ).toggleClass( "is-visible");
+      return false;
+    });
+  });
+</script>

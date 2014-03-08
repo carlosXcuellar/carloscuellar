@@ -17,6 +17,13 @@
   padding: em(40) em(10) 0 em(10);
 }
 
+.l-header__nav {
+  @include media($medium-screen)  {
+    display: block;
+  }
+  display: none;
+}
+
 // MAIN CONTENT
 .l-content {
   @include media($medium-screen)  {
@@ -35,6 +42,5 @@
     width: em(160,16);
   }
   color: #fff;
-  padding-bottom: 1em;
   text-align: center;
 }
