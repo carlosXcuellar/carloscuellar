@@ -24,7 +24,8 @@ dl {
 }
 
 // INLINE LIST
-.list--inline {
+.list--inline,
+.rsx-page-num-list {
   display: inline;
   padding-left: 0;
   list-style-type: none;

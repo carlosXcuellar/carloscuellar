@@ -77,3 +77,10 @@
 section[role="region"] {
   padding: 10%;
 }
+
+.l-links {
+  padding: 0 !important;
+  > h1 {
+    padding: 10% 10% 5% 10%;
+  }
+}
