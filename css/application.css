@@ -532,13 +532,30 @@ blockquote {
     clear: both; }
 
 .l-header {
-  text-align: center;
-  padding: 2.5em 0.625em 0 0.625em; }
+  padding: 2.5em 0.625em 0 0.625em;
+  text-align: center; }
   @media screen and (min-width: 50em) {
     .l-header {
       position: fixed;
-      width: 10em;
-      padding: 5em 0 0 0; } }
+      padding: 5em 0 0 0;
+      width: 10em; } }
+
+.l-header__brand {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2abb9b; }
+  .l-header__brand:before {
+    font-size: 90px;
+    font-size: 9rem;
+    color: #2d3e4f;
+    content: "\e608";
+    font-family: 'icomoon';
+    line-height: 1.2;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 .l-header__nav {
   display: none; }
@@ -567,6 +584,12 @@ blockquote {
       position: fixed;
       bottom: 0;
       width: 10em; } }
+
+.l-footer__credits {
+  font-size: 12px;
+  font-size: 1.2rem; }
+  .l-footer__credits a {
+    color: #fff; }
 
 .post {
   padding: 10%; }
@@ -650,13 +673,13 @@ input[type="color"] {
     border: 1px solid #2abb9b;
     border-radius: 20px;
     float: left; }
-  .paginator > a:last-child {
+  .paginator > a:nth-of-type(2) {
     float: right; }
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?j13hj6");
-  src: url("../fonts/icomoon.eot?#iefixj13hj6") format("embedded-opentype"), url("../fonts/icomoon.woff?j13hj6") format("woff"), url("../fonts/icomoon.ttf?j13hj6") format("truetype"), url("../fonts/icomoon.svg?j13hj6#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-pi66wb");
+  src: url("../fonts/icomoon.eot?#iefix-pi66wb") format("embedded-opentype"), url("../fonts/icomoon.woff?-pi66wb") format("woff"), url("../fonts/icomoon.ttf?-pi66wb") format("truetype"), url("../fonts/icomoon.svg?-pi66wb#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -695,6 +718,9 @@ input[type="color"] {
 
 .icon-twitter:before {
   content: "\e607"; }
+
+.icon-gafas:before {
+  content: "\e608"; }
 
 footer [class^="icon-"] {
   font-size: 24px;

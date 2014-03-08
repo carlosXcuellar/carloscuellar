@@ -52,8 +52,8 @@
   <div class="l-container">
     <!-- header and navigation -->
     <header role="banner" class="l-header">
-    	<div class="l-header__brand">
-        <h1 class="nav__toggle"><txp:link_to_home><img src="http://dummyimage.com/100x100/2ABB9B/686a82.gif&text=gafas" alt="gafas" style="border-radius: 50px;"></txp:link_to_home></h1>
+    	<div class="l-header__brand nav__toggle">
+        <h1><txp:link_to_home> </txp:link_to_home></h1>
       </div>
       <div class="l-header__nav">
         <txp:output_form form="tf_primary_navigation" />
@@ -134,12 +134,12 @@
     <footer role="contentinfo" class="l-footer">
       <div class="l-footer__credits">
         <ul class="list--inline">
-          <li><i class="icon-feed"></i></li>
-          <li><i class="icon-twitter"></i></li>
-          <li><i class="icon-linkedin"></i></li>
-          <li><i class="icon-github"></i></li>
+          <li><a href="/rss" title="RSS Feed"><i class="icon-feed"></i></a></li>
+          <li><a href="https://twitter.com/cuellarllar" title="Twitter"><i class="icon-twitter"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/cuellarllar" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+          <li><a href="https://github.com/cuellarllar" title="Github"><i class="icon-github"></i></a></li>
         </ul>
-        <p>some credits</p>
+        <p>&copy; Carlos Cu&eacute;llar 2014</p>
       </div>
     </footer>
 

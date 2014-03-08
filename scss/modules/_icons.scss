@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?j13hj6');
-  src:url('../fonts/icomoon.eot?#iefixj13hj6') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?j13hj6') format('woff'),
-    url('../fonts/icomoon.ttf?j13hj6') format('truetype'),
-    url('../fonts/icomoon.svg?j13hj6#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?-pi66wb');
+  src:url('../fonts/icomoon.eot?#iefix-pi66wb') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-pi66wb') format('woff'),
+    url('../fonts/icomoon.ttf?-pi66wb') format('truetype'),
+    url('../fonts/icomoon.svg?-pi66wb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,6 +47,10 @@
 .icon-twitter:before {
   content: "\e607";
 }
+.icon-gafas:before {
+  content: "\e608";
+}
+
 
 // INCREASE SIZE ICONS FOOTER
 footer [class^="icon-"] {
