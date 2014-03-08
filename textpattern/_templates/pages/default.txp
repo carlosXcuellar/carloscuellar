@@ -114,7 +114,7 @@
 
         <txp:if_variable name="more" value="">
           <txp:else />
-          <p class="paginator">
+          <div class="paginator">
             <txp:if_variable name="prev" value="">
               <txp:else />
               <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">← <txp:text item="older" /></a>
@@ -124,7 +124,7 @@
               <txp:else />
               <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> →</a>
             </txp:if_variable>
-          </p>
+          </div>
         </txp:if_variable>
 
       </txp:if_search>

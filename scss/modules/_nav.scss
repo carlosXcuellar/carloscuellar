@@ -48,16 +48,16 @@ input[type="color"] {
 
 // SEARCH FORM
 .nav__search {
-  background: rgba(255,255,255,0.25) !important;
   border: none !important;
-  color: #FFF;
   border-radius: 3px 0 0 3px !important;
+  background: rgba(255,255,255,0.25) !important;
+  color: #FFF;
 }
 
 // NAV LIST
 .nav__list {
-  list-style-type: none;
   padding: em(20,16) 0;
+  list-style-type: none;
   a {
     color: #fff;
   }
@@ -65,11 +65,11 @@ input[type="color"] {
     color: $green;
   }
   > li {
-    border-bottom: 1px solid #fff;
     padding: 0.4em 0;
+    border-bottom: 1px solid #fff;
   }
   > li:last-child {
-    border-bottom: none
+    border-bottom: none;
   }
   .active {
     font-weight: 800;
@@ -79,4 +79,20 @@ input[type="color"] {
 // NAV LIST
 .nav__toggle {
   // float: right;
+}
+
+// PAGINATOR 
+.paginator {
+  padding: 1em 10%;
+  background-color: $lighter-gray;
+  @include clearfix;
+  > a {
+    padding: 0.3em 0.6em;
+    border: 1px solid $green;
+    border-radius: 20px;
+    float: left;
+  }
+  > a:last-child {
+    float: right;
+  }
 }
