@@ -680,6 +680,10 @@ input[type="color"] {
 .icon-twitter:before {
   content: "\e607"; }
 
+footer [class^="icon-"] {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
 ul, ol {
   margin: 0;
   margin-bottom: 0.75em;
