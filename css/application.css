@@ -546,9 +546,9 @@ blockquote {
   height: 100px;
   border-radius: 50%;
   background-color: #2abb9b;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out; }
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out; }
   .l-header__brand:hover {
     background-color: #fff; }
   .l-header__brand > h1 a {
