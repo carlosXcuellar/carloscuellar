@@ -78,7 +78,15 @@ input[type="color"] {
 
 // NAV LIST
 .nav__toggle {
-  // float: right;
+  @include media($medium-screen)  {
+    display: none;
+  }
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: em(30);
+  right: 1em;
 }
 
 // PAGINATOR 

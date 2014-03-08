@@ -52,9 +52,12 @@
   <div class="l-container">
     <!-- header and navigation -->
     <header role="banner" class="l-header">
-    	<div class="l-header__brand nav__toggle">
-        <h1><txp:link_to_home>Carlos Cu&eacute;llar</txp:link_to_home></h1>
+      <div class="nav__toggle">
+        <i class="icon-menu"></i>
       </div>
+    	<div class="l-header__brand">
+        <h1><txp:link_to_home><i class="icon-gafas"></i></txp:link_to_home></h1>
+      </div>     
       <div class="l-header__nav">
         <txp:output_form form="tf_primary_navigation" />
         <txp:output_form form="tf_search_form" />
