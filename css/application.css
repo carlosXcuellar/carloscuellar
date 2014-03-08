@@ -532,7 +532,7 @@ blockquote {
     clear: both; }
 
 .l-header {
-  padding: 2.5em 0.625em 0 0.625em;
+  padding: 1.25em 0.625em 0 0.625em;
   text-align: center; }
   @media screen and (min-width: 50em) {
     .l-header {
@@ -541,14 +541,13 @@ blockquote {
       width: 10em; } }
 
 .l-header__brand {
-  margin: 0 auto;
+  margin: 0 auto 1.25em auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #2abb9b; }
   .l-header__brand:before {
     font-size: 90px;
-    font-size: 9rem;
     color: #2d3e4f;
     content: "\e608";
     font-family: 'icomoon';
@@ -556,6 +555,8 @@ blockquote {
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+  .l-header__brand h1 {
+    text-indent: -3000px; }
 
 .l-header__nav {
   display: none; }
