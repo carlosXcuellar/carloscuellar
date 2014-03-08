@@ -35,26 +35,32 @@
       </div>     
       <div class="l-header__nav">
         <txp:output_form form="tf_primary_navigation" />
-        <txp:output_form form="tf_search_form" />
+        <form method="get" action="/links/">
+          <input type="search" value="" name="q" class="nav__search" placeholder="Search links" id="search">
+        </form>
       </div>
     </header>
 
 <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
       <txp:if_search>
-      
-        <h2 class="page-header"><txp:text item="search_results" />: <txp:page_url type="q" /></h2>
-        <p>Links containing &laquo;<txp:page_url type="q" />&raquo;</p>
-        <txp:rah_link_search break="li" wraptag="ul" />
-        <br>
+        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+          <h2 class="page-header"><txp:text item="search_results" />: <txp:page_url type="q" /></h2>
+          <p>Links containing &laquo;<txp:page_url type="q" />&raquo;</p>
+          <txp:rah_link_search break="li" wraptag="ul" />
+        </section>
 
         <txp:else />
-        <h1>Links <small>(Page <txp:rsx_page_number /> of <txp:rsx_last_page_num />)</small></h1>
-        <txp:linklist break="li" form="Links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="unstyled link-list" breakclass="link-item" />
+        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+          <h1>Links <small>(Page <txp:rsx_page_number /> of <txp:rsx_last_page_num />)</small></h1>
+          <txp:linklist break="li" form="links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="" />
 
-       <div class="pagination pagination-centered"><txp:rsx_page_number_list nav='1' leftward='&lt;&lt; Prev' rightward='Next &gt;&gt;' delim='' windowsize='5' />
-        </div><!-- .pagination -->
+          <div class="pagination list--inline"><txp:rsx_page_number_list nav='1' delim='' windowsize='5' />
+          </div><!-- .pagination -->
+        </section>
 
+
+        <txp:article limit="1" /> 
       </txp:if_search>
     </main>
 

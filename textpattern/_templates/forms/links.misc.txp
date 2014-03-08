@@ -1,0 +1,4 @@
+<div class="link-item">
+  <strong><txp:link /></strong> | <time><txp:link_date /></time><br />
+  <txp:link_description /> 
+</div>
