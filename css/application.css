@@ -575,6 +575,7 @@ blockquote {
         margin-right: 0; } }
 
 .l-footer {
+  padding-top: 1.25em;
   color: #fff;
   text-align: center; }
   @media screen and (min-width: 50em) {
