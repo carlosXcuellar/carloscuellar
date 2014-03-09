@@ -17,10 +17,10 @@
 </txp:if_search_results>
 
 <!-- display resulting articles (10 per page) -->
-<txp:article limit="10" wraptag="ul" class="links__list">
+<txp:article limit="10" wraptag="ul" class="listing">
 
   <li role="article" itemscope itemtype="http://schema.org/Article">
-    <div class="links__item">
+    <div class="listing__item">
       <h3 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h3>
       <p><txp:search_result_excerpt /></p>
       <p><i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time></p>

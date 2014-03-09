@@ -599,30 +599,29 @@ blockquote {
     .l-footer__credits a:hover {
       color: #2abb9b; }
 
-section[role="region"] {
-  padding: 10%; }
-
-.l-links {
+.l-listing {
   padding: 0 !important; }
-  .l-links > h1 {
+  .l-listing > h1 {
     padding: 10% 10% 0 10%; }
-  .l-links p:first-child {
+  .l-listing p:first-child {
     padding: 0 10%; }
+
+.l-archive {
+  padding: 10%; }
 
 .post {
   padding: 10%; }
+  .post:nth-of-type(2n) {
+    background-color: #f3f3f3 !important; }
 
-.links__list {
+.listing {
   list-style-type: none;
   padding-left: 0; }
-  .links__list > li:nth-of-type(2n+1) {
+  .listing > li:nth-of-type(2n+1) {
     background-color: #f3f3f3; }
 
-.links__item {
+.listing__item {
   padding: 1.5em 10% 0.5em 10%; }
-
-.post:nth-of-type(2n) {
-  background-color: #f3f3f3 !important; }
 
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
@@ -872,5 +871,6 @@ tr, td, th {
     page-break-after: avoid; }
 
   header,
-  footer {
+  footer,
+  .paginator {
     display: none; } }

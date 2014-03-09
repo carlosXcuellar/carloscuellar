@@ -1,5 +1,5 @@
 <li role="article" itemscope itemtype="http://schema.org/Article">
-  <div class="links__item">
+  <div class="listing__item">
     <h3 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h3>
 
     <!-- if the article has an excerpt, display that -->

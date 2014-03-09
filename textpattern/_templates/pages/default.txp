@@ -58,7 +58,7 @@
       <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
       <txp:if_search>
 
-        <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage" class="l-links">
+        <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage" class="l-listing">
           <h1 itemprop="name"><txp:text item="search_results" /> for &ldquo;<txp:page_url type="q" />&rdquo;</h1>
           <div itemprop="mainContentOfPage">
             <txp:output_form form="search_results" />
@@ -70,10 +70,10 @@
         <!-- else is this a tag page -->
         <txp:if_section name="tag">
 
-          <section role="region" itemscope itemtype="http://schema.org/CollectionPage" class="l-links">
+          <section role="region" itemscope itemtype="http://schema.org/CollectionPage" class="l-listing">
             <h1>Tag: &ldquo;<txp:tru_tags_tag_parameter />&rdquo;</h1>
             <div itemprop="mainContentOfPage">
-              <txp:tru_tags_handler listform="article_listing" wraptag="ul" class="links__list" />
+              <txp:tru_tags_handler listform="article_listing" wraptag="ul" class="listing" />
             </div>
           </section>
 

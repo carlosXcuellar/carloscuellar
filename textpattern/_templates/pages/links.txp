@@ -50,9 +50,9 @@
         </section>
 
         <txp:else />
-        <section role="region" class="l-links" itemscope itemtype="http://schema.org/CollectionPage">
+        <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
           <h1>Links <small>(Page <txp:rsx_page_number /> of <txp:rsx_last_page_num />)</small></h1>
-          <txp:linklist break="li" form="links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="links__list" />
+          <txp:linklist break="li" form="links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="listing" />
 
           <div class="paginator"><txp:rsx_page_number_list nav='1' delim='' windowsize='5' />
           </div><!-- .pagination -->

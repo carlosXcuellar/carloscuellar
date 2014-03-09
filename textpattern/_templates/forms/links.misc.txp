@@ -1,4 +1,4 @@
-<div class="links__item">
+<div class="listing__item">
   <h3><txp:link /></h3>
   <p><i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="<txp:link_date format="iso8601" />" itemprop="datePublished"><txp:link_date /></time>&nbsp;&nbsp;&nbsp;<i class="icon-link"></i>&nbsp;&nbsp;ID #<txp:link_id /></p>
   <p><txp:link_description class="links__description"/></p>

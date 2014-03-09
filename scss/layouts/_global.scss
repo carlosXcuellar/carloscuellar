@@ -74,11 +74,8 @@
   }
 }
 
-section[role="region"] {
-  padding: 10%;
-}
-
-.l-links {
+// LISTING PAGES LAYOUT
+.l-listing {
   padding: 0 !important;
   > h1 {
     padding: 10% 10% 0 10%;
@@ -86,4 +83,9 @@ section[role="region"] {
   p:first-child  {
     padding: 0 10%;
   }
+}
+
+// ARCHIVE PAGE LAYOUT
+.l-archive {
+  padding: 10%;
 }
