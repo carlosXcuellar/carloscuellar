@@ -614,7 +614,7 @@ section[role="region"] {
     background-color: #f3f3f3; }
 
 .links__item {
-  padding: 1.5em 10%; }
+  padding: 1.5em 10% 0.5em 10%; }
 
 .links__list
 .post:nth-of-type(2n) {
@@ -713,8 +713,8 @@ input[type="color"] {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?3u53hj");
-  src: url("../fonts/icomoon.eot?#iefix3u53hj") format("embedded-opentype"), url("../fonts/icomoon.woff?3u53hj") format("woff"), url("../fonts/icomoon.ttf?3u53hj") format("truetype"), url("../fonts/icomoon.svg?3u53hj#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-9nhrig");
+  src: url("../fonts/icomoon.eot?#iefix-9nhrig") format("embedded-opentype"), url("../fonts/icomoon.woff?-9nhrig") format("woff"), url("../fonts/icomoon.ttf?-9nhrig") format("truetype"), url("../fonts/icomoon.svg?-9nhrig#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -756,6 +756,9 @@ input[type="color"] {
 
 .icon-menu:before {
   content: "\e609"; }
+
+.icon-link:before {
+  content: "\e60a"; }
 
 .icon-gafas:before {
   content: "\e608"; }
