@@ -5,14 +5,14 @@
 
 <!-- if search result count greater than 200 then display excessive results message, otherwise show search result count -->
   <txp:if_search_results max="200">
-    <p><txp:search_result_count /> <txp:text item="matching_search_request" /> <q><txp:search_term /></q>:</p>
+    <p class="results_found"><txp:search_result_count /> <txp:text item="matching_search_request" /> <q><txp:search_term /></q>:</p>
     <txp:else />
-    <p><txp:text item="too_common_search_term" /> <q><txp:search_term /></q></p>
+    <p class="results_found"><txp:text item="too_common_search_term" /> <q><txp:search_term /></q></p>
   </txp:if_search_results>
 
 <!-- if no search results, then display no search results message -->
   <txp:else />
-  <p><txp:text item="no_search_matches" /></p>
+  <p class="results_found"><txp:text item="no_search_matches" /></p>
 
 </txp:if_search_results>
 

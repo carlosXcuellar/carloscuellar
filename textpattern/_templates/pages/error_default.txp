@@ -31,9 +31,13 @@
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
       <article class="post">
         <h1><txp:error_status /></h1>
-        <img src="http://www.quickmeme.com/img/32/32f5280e86bc37a418071d5c5d2c98df5b74ee955a8cdbba2a2713204b2a6e26.jpg" alt="cat 404">
-        <p class="alert--error"><txp:error_message /></p>
-        <p>You can try to find it using the search box or checking the <a href="/blog">blog archive</a>. Thanks.</p>
+        <p class="alert--error"><strong><txp:error_message /></strong></p>
+        <p>
+          <img src="http://carloscuellar.net/images/147.jpg" width="800" height="500" alt="The 404 Error Cat" />
+        </p>
+        <p>My cat looked everywhere and he couldn't find that page!</p>
+        <p>But don't worry, you can try to find it using the search box or you can take a look at the <a href="/blog">blog archive</a>.</p>
+        <p>Thank you!</p>
       </article> 
     </main>
 

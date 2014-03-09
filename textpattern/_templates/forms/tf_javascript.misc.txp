@@ -22,5 +22,10 @@
   });
 </script>
 
+<!-- external links -->
+<script type="text/javascript">
+  $('a[rel="external"]').attr('target', '_blank');
+</script>
+
 <!-- mint stats -->
 <script src="/mint/?js"></script>

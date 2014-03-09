@@ -10,7 +10,7 @@
 .l-header {
   @include media($medium-screen)  {
     position: fixed;
-    padding: em(80) 0 0 0;
+    padding: em(56) 0 0 0;
     width: em(160);
   }
   padding: em(20) em(10) 0 em(10);
@@ -75,6 +75,9 @@
       color: $green;
     }
   }
+  > p {
+    margin-bottom: 0.5em;
+  }
 }
 
 // LISTING PAGES LAYOUT
@@ -83,7 +86,7 @@
   > h1 {
     padding: 10% 10% 0 10%;
   }
-  p:first-child  {
+  .results_found {
     padding: 0 10%;
   }
 }
