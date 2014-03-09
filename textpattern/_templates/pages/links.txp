@@ -43,10 +43,10 @@
 <!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
       <txp:if_search>
-        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+        <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
           <h1><txp:text item="search_results" /> for &ldquo;<txp:page_url type="q" />&rdquo;</h1>
-          <p>Links found matching your search request &ldquo;<txp:page_url type="q" />&rdquo;:</p>
-          <txp:rah_link_search break="li" wraptag="ul" />
+          <p class="results_found">Links found matching your search request &ldquo;<txp:page_url type="q" />&rdquo;:</p>
+          <txp:rah_link_search break="li" wraptag="ul" class="listing" />
         </section>
 
         <txp:else />

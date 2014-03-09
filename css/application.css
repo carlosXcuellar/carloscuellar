@@ -606,7 +606,7 @@ blockquote {
   padding: 0 !important; }
   .l-listing > h1 {
     padding: 10% 10% 0 10%; }
-  .l-listing p:first-child {
+  .l-listing .results_found {
     padding: 0 10%; }
 
 .l-archive {
