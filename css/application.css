@@ -587,6 +587,9 @@ blockquote {
       bottom: 0;
       padding-right: 1em;
       width: 10em; } }
+  .l-footer [class^="icon-"] {
+    font-size: 20px;
+    font-size: 2rem; }
 
 .l-footer__credits {
   font-size: 12px;
@@ -765,10 +768,6 @@ input[type="color"] {
 
 .icon-gafas:before {
   content: "\e608"; }
-
-footer [class^="icon-"] {
-  font-size: 20px;
-  font-size: 2rem; }
 
 ul, ol {
   margin: 0;

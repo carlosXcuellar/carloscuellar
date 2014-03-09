@@ -56,11 +56,3 @@
 .icon-gafas:before {
   content: "\e608";
 }
-
-
-
-
-// INCREASE SIZE ICONS FOOTER
-footer [class^="icon-"] {
-  @include font-size(2);
-}
