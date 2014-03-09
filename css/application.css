@@ -614,6 +614,9 @@ blockquote {
 .l-archive {
   padding: 10%; }
 
+.tag-cloud {
+  padding: 1.5em 10%; }
+
 .post {
   padding: 10%;
   word-wrap: break-word; }

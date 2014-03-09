@@ -47,10 +47,10 @@
     <!-- main content -->
     <!-- left (main) column -->
       <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
-        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+        <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
           <h1 itemprop="name">Archive</h1>
             <div itemprop="mainContentOfPage">
-            <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
+            <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="listing">
 
               <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
               <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
@@ -61,7 +61,8 @@
                     </li>
                   </ul>
                 </txp:if_first_article>
-                <li><strong><txp:posted format="%Y" /></strong>
+                <li class="listing__item">
+                  <h4><txp:posted format="%Y" /></h4>
                   <ul>
               </txp:variable>
 
@@ -80,11 +81,12 @@
 
             </txp:article_custom>
         </div>
-        <hr />
-        <h2>Tag Cloud</h2>
-        <txp:tru_tags_cloud section="blog" />
-          </section>
-        </main>
+        <section class="tag-cloud">
+          <h2>Tag Cloud</h2>
+          <txp:tru_tags_cloud section="blog" />
+            </section>
+          </main>
+        </section>
 
     <txp:output_form form="footer" />
 
