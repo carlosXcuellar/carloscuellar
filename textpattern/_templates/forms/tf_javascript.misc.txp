@@ -21,3 +21,6 @@
     });
   });
 </script>
+
+<!-- mint stats -->
+<script src="/mint/?js"></script>
