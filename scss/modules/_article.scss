@@ -17,10 +17,8 @@
   padding: 1.5em 10% 0.5em 10%;
 }
 
-.links__list 
-
 // ALTERNATE ROWS
 .post:nth-of-type(2n) {
-  background-color: $lighter-gray;
+  background-color: $lighter-gray !important;
 }
 
