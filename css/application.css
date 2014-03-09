@@ -601,6 +601,8 @@ blockquote {
     color: #fff; }
     .l-footer__credits a:hover {
       color: #2abb9b; }
+  .l-footer__credits > p {
+    margin-bottom: 0.5em; }
 
 .l-listing {
   padding: 0 !important; }
