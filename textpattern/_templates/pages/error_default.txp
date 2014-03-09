@@ -5,19 +5,19 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
 
 <head>
-  <title><txp:error_status /></title>
+  <title><txp:error_status /> | <txp:page_title /></title>
   <meta charset="utf-8">
   <meta name="generator" content="Textpattern CMS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="none">
 
-<!-- content feeds -->
-  <txp:feed_link flavor="atom" format="link" label="Atom" />
-  <txp:feed_link flavor="rss" format="link" label="RSS" />
-  <txp:rsd />
+<!-- feeds -->     
+  <link rel="alternate" type="application/rss+xml" title="RSS Posts" href="http://carloscuellar.net/rss" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Links" href="http://carloscuellar.net/rss/?area=link" />
 
 <!-- css -->
 
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800'>
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css"> 
 
 </head>
@@ -25,50 +25,21 @@
 <body class="error-page">
   <div class="l-container">
 
-    <!-- header and navigation -->
-    <header role="banner" class="l-header">
-      <div class="l-header__brand">
-        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-        <h3><txp:site_slogan /></h3>
-      </div>
-      <div class="l-header__nav">
-        <txp:output_form form="tf_primary_navigation" />
-      </div>
-    </header>
+    <txp:output_form form="header" />
 
-<!-- left (main) column -->
+<!-- main content -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
-      <h1 class=""><txp:error_status /></h1>
-      <p class="alert--error"><txp:error_message /></p>
+      <article class="post">
+        <h1><txp:error_status /></h1>
+        <img src="http://www.quickmeme.com/img/32/32f5280e86bc37a418071d5c5d2c98df5b74ee955a8cdbba2a2713204b2a6e26.jpg" alt="cat 404">
+        <p class="alert--error"><txp:error_message /></p>
+        <p>You can try to find it using the search box or checking the <a href="/blog">blog archive</a>. Thanks.</p>
+      </article> 
     </main>
 
-<!-- right (complementary) column -->
-    <aside role="complementary" class="l-aside">
-    
-      <txp:output_form form="tf_search_form" />
+    <txp:output_form form="footer" />
 
-      <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-      <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
-
-      <h4><txp:text item="external_links" /></h4>
-      <txp:linklist wraptag="ul" break="li" class="no-bullet" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-    </aside> <!-- /complementary -->
-
-  </div> <!-- /.row -->
-
-  <!-- footer -->
-  <footer role="contentinfo" class="l-footer">
-    <nav role="navigation" class="l-footer__nav" aria-label="<txp:text item="navigation" />">
-      <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="" class="list--inline">
-        <li<txp:if_section name='<txp:section />'><txp:if_search><txp:else /><txp:if_category><txp:else /><txp:if_author><txp:else /> class="active"</txp:if_author></txp:if_category></txp:if_search></txp:if_section>>
-          <txp:section title="1" link="1" />
-        </li>
-      </txp:section_list>
-    </nav>
-    <div class="l-footer__credits">
-      <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.
-    </div>
-  </footer>
+  </div> <!-- /.l-container -->
 
   <!-- add your own JavaScript here -->
   <txp:output_form form="tf_javascript" />

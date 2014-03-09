@@ -3,9 +3,9 @@
 
 $light-blue: #A4DBE8;
 $medium-blue: #00AFD7;
-$dark-blue: #0085A3;
+$dark-blue: #2D3E4F;
 
-$lighter-gray: #F0F0F0;
+$lighter-gray: #F3F3F3;
 $light-gray: #DDD;
 $medium-gray: #B2B4B2;
 $dark-gray: #54585A;
@@ -14,12 +14,12 @@ $red: #F04848;
 $yellow: #ECBD0C;
 $orange: #FF8200;
 $light-orange: #FECB8B;
-$green: #82BC00;
+$green: #2ABB9B;
 $purple: #753BBD;
 
 // FONT COLORS
 $base-font-color: $dark-gray;
-$base-accent-color: $dark-blue;
+$base-accent-color: $green;
 
 // TEXT LINK COLORS
 $base-link-color: $base-accent-color;
@@ -36,7 +36,7 @@ $success-color: $green;
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: $helvetica;
+$sans-serif: "Open Sans", $helvetica;
 $serif: $georgia;
 
 $base-font-family: $sans-serif;
@@ -52,10 +52,8 @@ $base-border-radius: em(3);
 ///////////////////////////////////////////////////////////////////////////////
 
 $small-screen: em(560);
-$medium-screen: em(768);
+$medium-screen: em(800);
 $large-screen: em(960);
 $huge-screen: em(1600);
 
-// $max-width: 90%;
-// $grid-columns: 12;
-
+$max-width: em(940);

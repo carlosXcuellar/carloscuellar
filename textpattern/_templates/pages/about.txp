@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="<txp:lang />" dir="<txp:text item="lang_dir" />""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
+
+<head>
+  <txp:output_form form="page_title" />
+  <meta charset="utf-8">
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, noodp, noydir">
+
+<!-- feeds -->     
+  <link rel="alternate" type="application/rss+xml" title="RSS Posts" href="http://carloscuellar.net/rss" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Links" href="http://carloscuellar.net/rss/?area=link" />
+
+<!-- css -->
+
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800'>
+	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css"> 
+
+</head>
+
+<body class="error-page">
+  <div class="l-container">
+
+    <txp:output_form form="header" />
+
+<!-- main content -->
+    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+      <article class="post">
+        <h1>About Carlos</h1>
+        <p>I've been designing all kinds of websites since 2004. Currently I work as a UI Designer for <a href="http://www.lightspeedsystems.com/">Lightspeed Systems</a>, where I help develop an awesome social e-learning platform called <a href="http://mybigcampus.com/">My Big Campus</a>. Before that, I worked for a while with the fine folks of <a href="http://horsepower.com/">Horsepower.com</a>, where we connected farmers with consumers. You can see my complete work history on my <a href="http://www.linkedin.com/in/cuellarllar/">Linkedin profile</a>.</p>
+        <p>If you'd like to get in touch, please feel free to  <txp:email email="hola@carloscuellar.net" linktext="send me an email" title="send me an email" />.</p>
+        <img src="/images/141.jpg" class="wide" alt="carlos" />
+        <h2>About this site</h2>
+        <p>This is basically a weblog where the author writes random notes about design, technology, music, etc. I also keep a collection of links, some of them recovered from my old Delicious account.</p>
+        <p>This site is made with some of the latest web standards from the <abbr title="World Wide Web Consortium">W3C</abbr>. The publishing system used is <a href="http://textpattern.com/">Textpattern</a>, a powerful and flexible <abbr title="Content Management System">CMS</abbr>, and the styles are based on <a href="https://github.com/cuellarllar/txp.smacss">txp.smacss</a>, a barebones Textpattern theme using Bourbon and Neat and following SMACSS guidelines. All the code and markup on this site are made with <a href="http://www.sublimetext.com/">Sublime Text 2</a>, my favorite text editor for OS X, and all the graphics have been created with Bohemian Coding's <a href="http://www.bohemiancoding.com/sketch/">Sketch</a>.</p>
+        <p>This site has been tested and is supported in modern browsers like Chrome, Safari, Opera (11+), Internet Explorer (9+) and Firefox (4+).</p>
+      </article> 
+    </main>
+
+    <txp:output_form form="footer" />
+
+  </div> <!-- /.l-container -->
+
+  <txp:output_form form="tf_javascript" />
+
+</body>
+</html>

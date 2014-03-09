@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="<txp:lang />" dir="<txp:text item="lang_dir" />""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
+
+<head>
+  <txp:output_form form="page_title" />
+  <meta charset="utf-8">
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, noodp, noydir">
+
+  <txp:if_individual_article>
+    <!-- add meta author for individual articles -->
+    <txp:meta_author title="1" />
+  </txp:if_individual_article>
+
+<!-- feeds -->     
+  <link rel="alternate" type="application/rss+xml" title="RSS Posts" href="http://carloscuellar.net/rss" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Links" href="http://carloscuellar.net/rss/?area=link" />
+
+<!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
+  <txp:if_individual_article>
+    <link rel="canonical" href="<txp:permlink />">
+    <txp:else />
+    <link rel="canonical" href="<txp:section url="1" />">
+  </txp:if_individual_article>
+
+<!-- css -->
+
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800'>
+  <link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
+
+</head>
+
+<body class="<txp:section />-page">
+
+  <div class="l-container">
+
+    <txp:output_form form="header" />
+
+    <!-- main content -->
+    <!-- left (main) column -->
+      <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+          <h1 itemprop="name">Archive</h1>
+            <div itemprop="mainContentOfPage">
+            <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
+
+              <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
+              <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
+
+              <txp:if_variable name="year" value=""><txp:else />
+                <txp:if_first_article><txp:else />
+                      </ul>
+                    </li>
+                  </ul>
+                </txp:if_first_article>
+                <li><strong><txp:posted format="%Y" /></strong>
+                  <ul>
+              </txp:variable>
+
+              <txp:if_variable name="month" value=""><txp:else />
+                <txp:if_variable name="year" value="">
+                    </ul>
+                  </li>
+                <txp:else /></txp:if_variable>
+                <li><strong><txp:posted format="%B" /></strong>
+                  <ul>
+              </txp:variable>
+
+              <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
+
+              <txp:if_last_article></ul></li></ul></txp:if_last_article>
+
+            </txp:article_custom>
+        </div>
+        <hr />
+        <h2>Tag Cloud</h2>
+        <txp:tru_tags_cloud section="blog" />
+          </section>
+        </main>
+
+    <txp:output_form form="footer" />
+
+  </div> <!-- /.l-container -->
+
+  
+
+  <!-- add your own JavaScript here -->
+  <txp:output_form form="tf_javascript" />
+
+</body>
+</html>

@@ -6,12 +6,18 @@ html {
 }
 
 body {
-  @include font-size(1.4); // 14px
-  background-color: #fff;
+  @include font-size(1.6); // 16px
+  background-color: $dark-blue;
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
+}
+
+
+// Make body readable in IE8 and older
+.lt-ie9 body {
+  color: #fff;
 }
 
 // HEADINGS
@@ -19,38 +25,38 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $header-font-family;
   margin: 0 0  0.3em 0;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 1.25;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
 h1, .h1 {
-  @include font-size(3.2); // 32px
+  @include font-size(3.6); // 36px
 }
 
 h2, .h2 {
-  @include font-size(2.8); // 28px
+  @include font-size(3.2); // 32px
 }
 
 h3, .h3 {
-  @include font-size(2.4); // 24px
+  @include font-size(2.8); // 28px
 }
 
 h4, .h4 {
-  @include font-size(2.0); // 20px
+  @include font-size(2.4); // 24px
 }
 
 h5, .h5 {
-  @include font-size(1.6); // 16px
+  @include font-size(2); // 20px
 }
 
 h6, .h6 {
-  @include font-size(1.4); // 14px
+  @include font-size(1.6); // 16px
 }
 
 // BODY TEXT
 p {
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 1.5em;
 }
 
 a {
@@ -83,6 +89,7 @@ hr {
 img {
   margin: 0;
   max-width: 100%;
+  height: auto;
 }
 
 // INLINE TEXT SEMANTICS

@@ -1,12 +1,15 @@
 <li role="article" itemscope itemtype="http://schema.org/Article">
-  <h4 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h4>
+  <div class="listing__item">
+    <h3 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h3>
 
-<!-- if the article has an excerpt, display that -->
-  <txp:if_excerpt>
-    <div itemprop="description">
-      <txp:excerpt />
-    </div>
-  </txp:if_excerpt>
+    <!-- if the article has an excerpt, display that -->
+    <txp:if_excerpt>
+      <div itemprop="description">
+        <txp:excerpt />
+      </div>
+    </txp:if_excerpt>
 
-  <p class="footnote"><txp:text item="posted" /> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>, <txp:text item="author" /> <span itemprop="author"><txp:author link="1" this_section="1" /></span></p>
+    <p><i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time></p>
+  </div>
+ 
 </li>

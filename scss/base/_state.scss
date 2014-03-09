@@ -24,6 +24,14 @@
   visibility: hidden;
 }
 
+// SHOW IN BOTH SCREENREADERS AND BROWSERS: H5BP.COM/U
+///////////////////////////////////////////////////////////////////////////////
+
+.is-visible {
+  display: block !important;
+  visibility: visible;
+}
+
 // HIDE ONLY VISUALLY, BUT HAVE IT AVAILABLE FOR SCREENREADERS: H5BP.COM/V
 // .focassable Extends the .visuallyhidden class to allow the element to be focusable
 // when navigated to via the keyboard: h5bp.com/p

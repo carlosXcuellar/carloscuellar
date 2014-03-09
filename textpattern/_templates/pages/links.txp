@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="<txp:lang />" dir="<txp:text item="lang_dir" />""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
+
+<head>
+  <txp:output_form form="page_title" />
+  <meta charset="utf-8">
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- feeds -->     
+  <link rel="alternate" type="application/rss+xml" title="RSS Posts" href="http://carloscuellar.net/rss" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Links" href="http://carloscuellar.net/rss/?area=link" />
+
+<!-- css -->
+
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800'>
+	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css"> 
+
+</head>
+
+<body class="error-page">
+  <div class="l-container">
+
+    <!-- header and navigation -->
+    <header role="banner" class="l-header">
+      <div class="nav__toggle">
+        <i class="icon-menu"></i>
+      </div>
+      <div class="l-header__brand">
+        <h1><txp:link_to_home><i class="icon-gafas"></i></txp:link_to_home></h1>
+      </div>     
+      <div class="l-header__nav">
+        <txp:output_form form="tf_primary_navigation" />
+        <form method="get" action="/links/">
+          <input type="search" value="" name="q" class="nav__search" placeholder="Search links" id="search">
+        </form>
+      </div>
+    </header>
+
+<!-- main content -->
+    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+      <txp:if_search>
+        <section role="region" class="l-archive" itemscope itemtype="http://schema.org/CollectionPage">
+          <h1><txp:text item="search_results" /> for &ldquo;<txp:page_url type="q" />&rdquo;</h1>
+          <p>Links found matching your search request &ldquo;<txp:page_url type="q" />&rdquo;:</p>
+          <txp:rah_link_search break="li" wraptag="ul" />
+        </section>
+
+        <txp:else />
+        <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
+          <h1>Links <small>(Page <txp:rsx_page_number /> of <txp:rsx_last_page_num />)</small></h1>
+          <txp:linklist break="li" form="links" limit="50" pageby="limit" sort="id desc" wraptag="ul" class="listing" />
+
+          <div class="paginator"><txp:rsx_page_number_list nav='1' delim='' windowsize='5' />
+          </div><!-- .pagination -->
+        </section>
+
+
+        <txp:article limit="1" /> 
+      </txp:if_search>
+    </main>
+
+    <txp:output_form form="footer" />
+
+  </div> <!-- /.l-container -->
+
+  <!-- add your own JavaScript here -->
+  <txp:output_form form="tf_javascript" />
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 <article class="post" role="article" itemscope itemtype="http://schema.org/Article">
-
+  
   <!-- if not an individual article then make the title h1 a link -->
   <txp:if_individual_article>
     <h1 itemprop="name"><txp:title /></h1>
@@ -7,29 +7,19 @@
     <h1 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h1>
   </txp:if_individual_article>
 
-  <p>
-    <strong><txp:text item="posted" /></strong> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time><br>
-    <strong><txp:text item="comments" /></strong> 
-    <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl" itemscope itemtype="http://schema.org/UserComments">
-
-<!-- if comments then display the number, if no comments then print 'none' -->
-      <txp:if_comments>
-          <span itemprop="interactionCount"><txp:comments_count /></span>
-      <txp:else />
-          <span itemprop="interactionCount"><txp:text item="none" /></span>
-      </txp:if_comments>
-    </a>
+  <p><i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>
+  <txp:tru_tags_if_has_tags>
+    &nbsp;&nbsp;&nbsp;<i class="icon-tags"></i>&nbsp;&nbsp;<span itemprop="keywords"><txp:tru_tags_from_article break=", "  /></span>
+  </txp:tru_tags_if_has_tags>
   </p>
-
-  <txp:if_article_image>
-    <txp:images form="images" />
-  </txp:if_article_image>
 
   <div itemprop="articleBody">
     <txp:body />
+    
+    <txp:if_custom_field name="Via"> 
+      <p>Via <a href="<txp:custom_field name='Via' />"><txp:custom_field name='Via' /></a></p>
+    </txp:if_custom_field> 
   </div>
-
-  <p><strong><txp:text item="author" /></strong> <span itemprop="author"><txp:author link="1" this_section="1" /></span>
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->
     <txp:if_article_category>
