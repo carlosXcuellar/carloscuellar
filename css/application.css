@@ -602,7 +602,9 @@ section[role="region"] {
 .l-links {
   padding: 0 !important; }
   .l-links > h1 {
-    padding: 10% 10% 5% 10%; }
+    padding: 10% 10% 0 10%; }
+  .l-links p:first-child {
+    padding: 0 10%; }
 
 .post {
   padding: 10%; }

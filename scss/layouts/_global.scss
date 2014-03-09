@@ -81,6 +81,9 @@ section[role="region"] {
 .l-links {
   padding: 0 !important;
   > h1 {
-    padding: 10% 10% 5% 10%;
+    padding: 10% 10% 0 10%;
+  }
+  p:first-child  {
+    padding: 0 10%;
   }
 }
