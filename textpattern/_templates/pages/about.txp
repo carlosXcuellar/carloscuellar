@@ -9,11 +9,11 @@
   <meta charset="utf-8">
   <meta name="generator" content="Textpattern CMS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, noodp, noydir">
 
-<!-- content feeds -->
-  <txp:feed_link flavor="atom" format="link" label="Atom" />
-  <txp:feed_link flavor="rss" format="link" label="RSS" />
-  <txp:rsd />
+<!-- feeds -->     
+  <link rel="alternate" type="application/rss+xml" title="RSS Posts" href="http://carloscuellar.net/rss" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Links" href="http://carloscuellar.net/rss/?area=link" />
 
 <!-- css -->
 
