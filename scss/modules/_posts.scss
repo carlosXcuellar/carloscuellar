@@ -1,6 +1,7 @@
 // BLOG POST
 .post {
   padding: 10%;
+  word-wrap: break-word;
   &:nth-of-type(2n) {
     background-color: $lighter-gray !important;
   }

@@ -613,7 +613,8 @@ blockquote {
   padding: 10%; }
 
 .post {
-  padding: 10%; }
+  padding: 10%;
+  word-wrap: break-word; }
   .post:nth-of-type(2n) {
     background-color: #f3f3f3 !important; }
 
