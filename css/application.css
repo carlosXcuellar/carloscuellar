@@ -703,7 +703,8 @@ input[type="color"] {
   *zoom: 1;
   margin-bottom: 0;
   padding: 1em 10%;
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  text-align: center; }
   .paginator:before, .paginator:after {
     content: " ";
     display: table; }
