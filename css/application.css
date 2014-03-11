@@ -618,8 +618,7 @@ blockquote {
   padding: 1.5em 10%; }
 
 .post {
-  padding: 10%;
-  word-wrap: break-word; }
+  padding: 10%; }
   .post:nth-of-type(2n) {
     background-color: #f3f3f3 !important; }
 
@@ -631,6 +630,9 @@ blockquote {
 
 .listing__item {
   padding: 1.5em 10% 0.5em 10%; }
+
+.section-description {
+  padding: 0 10%; }
 
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
