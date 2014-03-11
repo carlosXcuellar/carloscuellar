@@ -1,7 +1,6 @@
 // BLOG POST
 .post {
   padding: 10%;
-  word-wrap: break-word;
   &:nth-of-type(2n) {
     background-color: $lighter-gray !important;
   }
@@ -20,3 +19,7 @@
   padding: 1.5em 10% 0.5em 10%;
 }
 
+// SECTION DESCRIPTIONS
+.section-description {
+  padding: 0 10%;
+}

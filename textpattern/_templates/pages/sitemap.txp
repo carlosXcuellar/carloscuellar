@@ -49,44 +49,47 @@
       <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
         <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
           <h1 itemprop="name">Archive</h1>
-            <div itemprop="mainContentOfPage">
+          <p class="section-description">This is a list of all the posts published on this site, listed by date.</p>
+          <div itemprop="mainContentOfPage">
             <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="listing">
 
-              <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
-              <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
+            <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
+            <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
 
-              <txp:if_variable name="year" value=""><txp:else />
-                <txp:if_first_article><txp:else />
-                      </ul>
-                    </li>
-                  </ul>
-                </txp:if_first_article>
-                <li class="listing__item">
-                  <h4><txp:posted format="%Y" /></h4>
-                  <ul>
-              </txp:variable>
-
-              <txp:if_variable name="month" value=""><txp:else />
-                <txp:if_variable name="year" value="">
+            <txp:if_variable name="year" value=""><txp:else />
+              <txp:if_first_article><txp:else />
                     </ul>
                   </li>
-                <txp:else /></txp:if_variable>
-                <li><strong><txp:posted format="%B" /></strong>
-                  <ul>
-              </txp:variable>
+                </ul>
+              </txp:if_first_article>
+              <li class="listing__item">
+                <h4><txp:posted format="%Y" /></h4>
+                <ul>
+            </txp:variable>
 
-              <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
+            <txp:if_variable name="month" value=""><txp:else />
+              <txp:if_variable name="year" value="">
+                  </ul>
+                </li>
+              <txp:else /></txp:if_variable>
+              <li><strong><txp:posted format="%B" /></strong>
+                <ul>
+            </txp:variable>
 
-              <txp:if_last_article></ul></li></ul></txp:if_last_article>
+            <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
+
+            <txp:if_last_article></ul></li></ul></txp:if_last_article>
 
             </txp:article_custom>
-        </div>
-        <section class="tag-cloud">
-          <h2>Tag Cloud</h2>
-          <txp:tru_tags_cloud section="blog" />
-            </section>
-          </main>
-        </section>
+          </div><!-- /mainContentofPage -->
+
+          <section class="tag-cloud">
+            <h2>Tag Cloud</h2>
+            <txp:tru_tags_cloud section="blog" />
+          </section><!-- /.tag-cloud -->
+          
+        </section><!-- /.l-listing -->
+      </main><!-- /.l-content -->
 
     <txp:output_form form="footer" />
 
