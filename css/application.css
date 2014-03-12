@@ -594,6 +594,7 @@ blockquote {
     font-size: 18px;
     font-size: 1.8rem;
     top: 3px;
+    right: 2px;
     position: relative; }
 
 .l-footer__credits {
