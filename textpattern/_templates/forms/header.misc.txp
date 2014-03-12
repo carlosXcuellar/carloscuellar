@@ -4,7 +4,7 @@
     <i class="icon-menu"></i>
   </div>
   <div class="l-header__brand">
-    <h1><txp:link_to_home><i class="icon-gafas"></i></txp:link_to_home></h1>
+    <h1><txp:link_to_home><i class="icon-gafas" aria-hidden="true"></i><span class="is-visuallyhidden">Carlos Cuellar</span></txp:link_to_home></h1>
   </div>     
   <div class="l-header__nav">
     <txp:output_form form="tf_primary_navigation" />
