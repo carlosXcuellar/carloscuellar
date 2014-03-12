@@ -18,6 +18,9 @@
   <txp:if_individual_article>
     <!-- add meta author for individual articles -->
     <txp:meta_author title="1" />
+    <txp:if_custom_field name="Meta Description"> 
+      <meta name="description" content="<txp:custom_field name='Meta Description' />"/>
+    </txp:if_custom_field> 
   </txp:if_individual_article>
 
 <!-- feeds -->     
