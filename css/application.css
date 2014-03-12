@@ -590,6 +590,11 @@ blockquote {
   .l-footer [class^="icon-"] {
     font-size: 20px;
     font-size: 2rem; }
+  .l-footer .icon-cc {
+    font-size: 18px;
+    font-size: 1.8rem;
+    top: 3px;
+    position: relative; }
 
 .l-footer__credits {
   font-size: 12px;
