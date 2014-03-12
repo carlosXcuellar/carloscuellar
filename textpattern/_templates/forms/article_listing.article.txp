@@ -11,5 +11,5 @@
 
     <p><i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time></p>
   </div>
- 
+
 </li>
