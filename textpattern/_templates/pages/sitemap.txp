@@ -76,7 +76,7 @@
                 <ul>
             </txp:variable>
 
-            <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
+            <li itemscope itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
 
             <txp:if_last_article></ul></li></ul></txp:if_last_article>
 
