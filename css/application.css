@@ -817,8 +817,8 @@ dl {
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
-    padding-right: 0.5em;
-    padding-left: 0.3125em; }
+    padding-right: 8px;
+    padding-left: 5px; }
 
 table {
   margin: 0.75em 0;
