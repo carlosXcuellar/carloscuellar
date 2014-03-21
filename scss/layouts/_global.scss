@@ -63,8 +63,8 @@
   }
   .icon-cc {
     @include font-size(1.8);
-    top: 3px;
-    right: 2px;
+    top: em(3);
+    right: em(2);
     position: relative;
   }
   padding-top: em(20);
@@ -82,7 +82,7 @@
     }
   }
   > p {
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
   }
 }
 
