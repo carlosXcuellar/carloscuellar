@@ -608,7 +608,7 @@ blockquote {
     .l-footer__credits a:hover {
       color: #2abb9b; }
   .l-footer__credits > p {
-    margin-bottom: 0.5em; }
+    margin: 0.5em 0; }
 
 .l-listing {
   padding: 0 !important; }
@@ -784,6 +784,9 @@ input[type="color"] {
 .icon-cc:before {
   content: "\e60a"; }
 
+.icon-link:before {
+  content: "\e60b"; }
+
 ul, ol {
   margin: 0;
   margin-bottom: 0.75em;
@@ -814,7 +817,7 @@ dl {
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
-    padding-right: 5px;
+    padding-right: 8px;
     padding-left: 5px; }
 
 table {
