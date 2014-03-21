@@ -31,7 +31,7 @@ dl {
   list-style-type: none;
   li {
     @include inline-block;
-    padding-right: 8px;
-    padding-left: 5px;
+    padding-right: em(8);
+    padding-left: em(5);
   }
 }

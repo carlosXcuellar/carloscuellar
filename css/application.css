@@ -593,8 +593,8 @@ blockquote {
   .l-footer .icon-cc {
     font-size: 18px;
     font-size: 1.8rem;
-    top: 3px;
-    right: 2px;
+    top: 0.1875em;
+    right: 0.125em;
     position: relative; }
 
 .l-footer__credits {
@@ -817,8 +817,8 @@ dl {
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
-    padding-right: 8px;
-    padding-left: 5px; }
+    padding-right: 0.5em;
+    padding-left: 0.3125em; }
 
 table {
   margin: 0.75em 0;
