@@ -14,12 +14,16 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="<txp:if_individual_article><txp:permlink /><txp:else /><txp:if_section><txp:section url='1' /><txp:else /><txp:if_category><txp:category url='1' /><txp:else /><txp:site_url /></txp:if_category></txp:if_section></txp:if_individual_article>">
   <meta property="og:site_name" content="<txp:site_name />">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@carlosXcuellar" />
+  <meta name="twitter:site" content="@carlosXcuellar" />
 
   <txp:if_individual_article>
     <!-- add meta author for individual articles -->
     <txp:meta_author title="1" />
     <txp:if_custom_field name="Meta Description"> 
       <meta name="description" content="<txp:custom_field name='Meta Description' />"/>
+      <meta name="og:description" content="<txp:custom_field name='Meta Description' />">
     </txp:if_custom_field> 
   </txp:if_individual_article>
 
